@@ -4,9 +4,11 @@ function esBisiesto(year)
     {
         return true;
     }
-    else{
-        return false;
-    }
+   if(year%400==0)
+   {
+    return true;
+   }
+   
 }
 
 export default esBisiesto;
