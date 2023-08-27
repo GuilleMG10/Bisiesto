@@ -8,7 +8,9 @@ describe( "Es bisiesto ", () => {
     it("Si es divisible ente 400 es bisiesto",() => { 
         expect(esBisiesto(2000)).toEqual(true);
      });
-    
+     it("Si son divisibles por 100 pero no por 400 NO son años bisiestos",() => { 
+        expect(esBisiesto(1700)).toEqual(false);
+     });
     
 });
 
