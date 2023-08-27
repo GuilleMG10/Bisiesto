@@ -11,7 +11,9 @@ describe( "Es bisiesto ", () => {
      it("Si son divisibles por 100 pero no por 400 NO son años bisiestos",() => { 
         expect(esBisiesto(1700)).toEqual(false);
      });
-    
+     it("Si son divisibles por 4 pero no por 100  son años bisiestos",() => { 
+        expect(esBisiesto(2008)).toEqual(true);
+     });
 });
 
 
